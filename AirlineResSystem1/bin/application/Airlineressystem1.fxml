@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="435.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Mycontroller">
+   <children>
+      <TabPane prefHeight="426.0" prefWidth="570.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Flight">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="listview" layoutY="133.0" prefHeight="243.0" prefWidth="570.0" />
+                        <Button layoutX="227.0" layoutY="83.0" mnemonicParsing="false" onAction="#displayflights" text="Button" />
+                        <TextField fx:id="var1" layoutX="8.0" layoutY="58.0" prefHeight="25.0" prefWidth="109.0" />
+                        <Label layoutX="8.0" layoutY="18.0" text="Departure Airport Code" />
+                        <Label layoutX="216.0" layoutY="27.0" prefHeight="17.0" prefWidth="117.0" text="Arrival Airport Code" />
+                        <TextField fx:id="var2" layoutX="215.0" layoutY="58.0" prefHeight="25.0" prefWidth="110.0" />
+                        <ComboBox fx:id="noofconnections" layoutX="365.0" layoutY="32.0" prefWidth="150.0" promptText="No.of Connections" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Fare">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="625.0">
+                     <children>
+                        <TextArea fx:id="textarea" layoutX="97.0" layoutY="56.0" prefHeight="200.0" prefWidth="420.0" />
+                        <Label layoutX="42.0" layoutY="14.0" text="Flight Number" />
+                        <TextField fx:id="flightnumber" layoutX="136.0" layoutY="10.0" />
+                        <Button layoutX="388.0" layoutY="19.0" mnemonicParsing="false" onAction="#displayfare" text="Search" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Availability">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="35.0" layoutY="30.0" prefHeight="17.0" prefWidth="87.0" text="Flight number" />
+                        <TextField fx:id="flightnumber1" layoutX="153.0" layoutY="26.0" prefHeight="25.0" prefWidth="149.0" />
+                        <Label layoutX="341.0" layoutY="30.0" text="Date" />
+                        <TextField fx:id="date" layoutX="376.0" layoutY="26.0" />
+                        <TextField fx:id="textfield1" layoutX="192.0" layoutY="105.0" />
+                        <Button layoutX="228.0" layoutY="67.0" mnemonicParsing="false" onAction="#displayavailability" text="Search" />
+                        <Label layoutX="108.0" layoutY="117.0" text="Available seats" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Passengers">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="50.0" layoutY="24.0" prefHeight="23.0" prefWidth="77.0" text="Flight Number" />
+                        <TextField fx:id="flightnumber2" layoutX="145.0" layoutY="27.0" prefHeight="9.0" prefWidth="149.0" text="162" />
+                        <Label layoutX="50.0" layoutY="79.0" text="Date" />
+                        <TextField fx:id="date1" layoutX="145.0" layoutY="67.0" text="2015-03-31" />
+                        <ListView fx:id="listview1" layoutX="15.0" layoutY="138.0" prefHeight="243.0" prefWidth="443.0" />
+                        <Button layoutX="355.0" layoutY="67.0" mnemonicParsing="false" onAction="#displaypassengerlist" text="Search" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Flight Instances">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="passengername" layoutX="204.0" layoutY="31.0" />
+                        <Label layoutX="63.0" layoutY="35.0" text="Passenger Name" />
+                        <Button layoutX="212.0" layoutY="82.0" mnemonicParsing="false" onAction="#flightinstances" text="Search" />
+                        <ListView fx:id="listview2" layoutX="25.0" layoutY="149.0" prefHeight="236.0" prefWidth="508.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

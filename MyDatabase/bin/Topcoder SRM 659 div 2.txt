@@ -1,0 +1,59 @@
+import java.util.*;
+import java.util.regex.*;
+import java.text.*;
+import java.math.*;
+import java.awt.geom.*;
+public class FilipTheFrog{
+ // public static void main(String args[])
+ // {
+   
+    public int countReachableIslands(int[] positions, int L)
+    {
+      int start = positions[0];
+      Arrays.sort(positions);
+      int noofislands = 0,index;
+      int value = 0 ,flag = 0;
+      ArrayList list = new ArrayList();
+      ArrayList index1 = new ArrayList();
+     
+      int start1,start2;
+      int counter = 0;
+     // int i =0;
+      /**initial scan through all the elements */
+    for (int i = counter; i < positions.length-1;i++){
+    //   while( i < positions.length){
+           flag =0;  
+           
+        if ((positions[i+1] - positions[i]) <= L){
+            System.out.print("testing");
+            System.out.println(positions[i]);
+        // && (positions[i] != start)){
+          // start1 = position[i+1];
+        //  if (positions[i] == start){
+            System.out.println("start");
+            System.out.println(start);
+           // flag = 1 ;
+            System.out.println("test1");
+         
+          // }
+        //  if (flag == 0) {
+         //   System.out.print("test2");
+         //  list.add(index);
+           System.out.print("index");
+         //  System.out.println(index );
+           noofislands = noofislands + 1 ;
+           start = positions[i];
+          
+          }   
+        else {
+          if (positions[i] >= start)
+          break;  //i++;
+        }
+       }
+         return noofislands+1;
+       }  
+       
+      }     
+     
+     
+    

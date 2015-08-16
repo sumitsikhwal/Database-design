@@ -1,0 +1,4 @@
+id,company,drug_id,trials,patients,dosage_mg,reading,double_blind,controlled_study,govt_funded,fda_approved
+897,"Dasan E&T Co. ,Ltd.",LE-111,16,2029,479,95.2,TRUE,FALSE,TRUE,FALSE
+916,Major Pharmaceuticals,EM-554,87,1291,433,11,TRUE,FALSE,FALSE,TRUE
+39,Pharmacia and Upjohn Company,VB-517,68,1248,302,60.6,FALSE,FALSE,TRUE,TRUE

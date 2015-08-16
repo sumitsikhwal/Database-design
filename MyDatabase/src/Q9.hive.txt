@@ -1,0 +1,4 @@
+CREATE TABLE tbl_business6 (review_id String,text String,business_id String,full_address String,schools String,longitude String,average_stars Double,date String,user_id String,open String,categories String,photo_url String,city String,review_count int,name String,neighborhoods String,url String,votescool String,votesfunny String,state String,stars Double,latitude String,type String,votesuseful String) ROW FORMAT DELIMITED FIELDS TERMINATED BY '^'; 
+LOAD DATA LOCAL INPATH '/usr/lib/hue/business2.csv' INTO TABLE tbl_business6;
+
+select business_id,full_address,FORMAT_CAT(categories) from tbl_business6 limit 10;
